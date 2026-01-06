@@ -1,0 +1,42 @@
+# Railway ignore file - files/directories to exclude from deployment
+
+# Media files (large video/audio)
+zoom_recordings/
+youtube_transcripts/
+
+# Development files
+*.local.py
+create_instagram_markdown.py
+parse_instagram_posts.py
+
+# Documentation (not needed in production)
+*.md
+!README.md
+
+# Testing
+testing/
+scripts/
+
+# Content (if not needed in production build)
+content/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Environment examples
+.env.example
+
+# Docker (Railway uses its own build)
+docker-compose.yml
+docker-compose.prod.yml
+Dockerfile
+
+# Deployment configs
+deploy/
+nginx-tayai.conf
+

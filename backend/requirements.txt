@@ -1,0 +1,54 @@
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+asyncpg==0.29.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+
+# Redis & Caching
+redis==5.0.1
+hiredis==2.2.3
+
+# AI & ML
+openai>=1.3.5  # OpenAI API client for GPT-4 and embeddings
+# Note: Vector storage now uses PostgreSQL pgvector extension (no external dependency needed)
+
+# HTTP Client
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Job Queue (Note: BullMQ is Node.js, use Celery or RQ for Python if needed)
+# For now, async tasks can be handled directly
+
+# Validation & Serialization
+pydantic==2.5.0
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+pyyaml==6.0.1  # For parsing YAML content files
+
+# Monitoring & Logging
+# Note: Sentry removed - use standard logging or add your preferred monitoring solution
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx-sse==0.3.1  # For testing SSE endpoints
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
