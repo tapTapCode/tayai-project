@@ -31,10 +31,10 @@ content/
 # Environment examples
 .env.example
 
-# Docker (Railway uses its own build)
+# Docker Compose files (not needed for Railway deployment)
 docker-compose.yml
 docker-compose.prod.yml
-Dockerfile
+# Note: Dockerfiles in subdirectories (frontend/Dockerfile, backend/Dockerfile) are needed and should NOT be ignored
 
 # Deployment configs
 deploy/
